@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-empty-like",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create an uninitialized ndarray having the same shape and data type as a provided ndarray.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-empty": "github:stdlib-js/array-empty#main",
+    "@stdlib/array-empty": "^0.0.1",
     "@stdlib/assert-has-own-property": "^0.0.7",
     "@stdlib/assert-is-ndarray-like": "^0.0.6",
     "@stdlib/assert-is-nonnegative-integer-array": "^0.0.8",
