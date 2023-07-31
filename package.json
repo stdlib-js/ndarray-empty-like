@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-empty-like",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create an uninitialized ndarray having the same shape and data type as a provided ndarray.",
   "license": "Apache-2.0",
   "author": {
