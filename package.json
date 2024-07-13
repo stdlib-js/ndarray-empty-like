@@ -55,6 +55,7 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
+    "@stdlib/array-bool": "^0.0.1",
     "@stdlib/array-complex128": "^0.2.1",
     "@stdlib/array-complex64": "^0.2.1",
     "@stdlib/array-float32": "^0.2.1",
@@ -69,9 +70,10 @@
     "@stdlib/assert-instance-of": "^0.2.1",
     "@stdlib/buffer-ctor": "^0.2.1",
     "@stdlib/math-base-special-pow": "^0.2.1",
+    "@stdlib/ndarray-base-empty": "^0.2.1",
     "@stdlib/ndarray-base-zeros": "^0.2.1",
     "@stdlib/ndarray-dtypes": "^0.2.1",
-    "@stdlib/ndarray-zeros": "^0.2.1",
+    "@stdlib/ndarray-empty": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
