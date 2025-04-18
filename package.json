@@ -39,8 +39,10 @@
   "dependencies": {
     "@stdlib/array-empty": "^0.3.0",
     "@stdlib/assert-has-own-property": "^0.2.2",
+    "@stdlib/assert-is-empty-collection": "^0.2.2",
     "@stdlib/assert-is-ndarray-like": "^0.2.2",
     "@stdlib/assert-is-nonnegative-integer-array": "^0.2.2",
+    "@stdlib/assert-is-number": "^0.2.2",
     "@stdlib/assert-is-plain-object": "^0.2.2",
     "@stdlib/buffer-alloc-unsafe": "^0.2.2",
     "@stdlib/ndarray-base-numel": "^0.2.2",
