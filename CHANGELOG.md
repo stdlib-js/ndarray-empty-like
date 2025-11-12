@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-18)
+## Unreleased (2025-11-12)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,8 @@
 
 <details>
 
+-   [`73b90f9`](https://github.com/stdlib-js/stdlib/commit/73b90f98e772d959db84ae6c7e680469e3641e45) - **docs:** update examples _(by Athan Reines)_
+-   [`3041dd6`](https://github.com/stdlib-js/stdlib/commit/3041dd64033596c03a6ed59f1a3e638fd48d4540) - **test:** use accessor functions and update docs _(by Athan Reines)_
 -   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
 -   [`046926b`](https://github.com/stdlib-js/stdlib/commit/046926b9a0ad4643802944ef110b1cfe1eb488c9) - **fix:** ensure support for zero-dimensional shapes _(by Athan Reines)_
 
