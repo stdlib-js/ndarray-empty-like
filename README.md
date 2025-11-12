@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-empty-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-emptyLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var emptyLike = require( 'path/to/vendor/umd/ndarray-empty-like/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.emptyLike;
-})();
-</script>
+var emptyLike = require( '@stdlib/ndarray-empty-like' );
 ```
 
 #### emptyLike( x\[, options] )
@@ -84,6 +78,8 @@ If no recognized module system is present, access bundle contents via the global
 Creates an uninitialized [ndarray][@stdlib/ndarray/ctor] having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 var zeros = require( '@stdlib/ndarray-zeros' );
 
 var x = zeros( [ 2, 2 ] );
@@ -92,10 +88,10 @@ var x = zeros( [ 2, 2 ] );
 var y = emptyLike( x );
 // returns <ndarray>
 
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 2, 2 ]
 
-var dt = y.dtype;
+var dt = String( getDType( y ) );
 // returns 'float64'
 ```
 
@@ -110,12 +106,14 @@ The function supports the following `options`:
 To override either the `dtype`, `shape`, or `order`, specify the corresponding option. For example, to override the inferred [data type][@stdlib/ndarray/dtypes],
 
 ```javascript
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 var zeros = require( '@stdlib/ndarray-zeros' );
 
 var x = zeros( [ 2, 2 ] );
 // returns <ndarray>
 
-var dt = x.dtype;
+var dt = String( getDType( x ) );
 // returns 'float64'
 
 var y = emptyLike( x, {
@@ -123,10 +121,10 @@ var y = emptyLike( x, {
 });
 // returns <ndarray>
 
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 2, 2 ]
 
-dt = y.dtype;
+dt = String( getDType( y ) );
 // returns 'int32'
 ```
 
@@ -155,18 +153,14 @@ dt = y.dtype;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var getData = require( '@stdlib/ndarray-data-buffer' );
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var empty = require( '@stdlib/ndarray-empty' );
+var emptyLike = require( '@stdlib/ndarray-empty-like' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate uninitialized arrays...
 var x;
@@ -177,13 +171,8 @@ for ( i = 0; i < dt.length; i++ ) {
         'dtype': dt[ i ]
     });
     y = emptyLike( x );
-    console.log( y.data );
+    console.log( getData( y ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -285,15 +274,15 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-empty-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/umd
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray-empty/tree/umd
+[@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray-empty
 
-[@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray-zeros-like/tree/umd
+[@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray-zeros-like
 
 <!-- </related-links> -->
 
