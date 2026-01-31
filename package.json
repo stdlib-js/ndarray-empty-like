@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-empty-like",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Create an uninitialized ndarray having the same shape and data type as a provided ndarray.",
   "license": "Apache-2.0",
   "author": {
@@ -39,7 +39,7 @@
   "dependencies": {
     "@stdlib/array-empty": "^0.3.0",
     "@stdlib/assert-has-own-property": "^0.2.2",
-    "@stdlib/assert-is-empty-collection": "^0.2.2",
+    "@stdlib/assert-is-empty-collection": "^0.2.3",
     "@stdlib/assert-is-ndarray-like": "^0.2.2",
     "@stdlib/assert-is-nonnegative-integer-array": "^0.2.2",
     "@stdlib/assert-is-number": "^0.2.2",
@@ -57,9 +57,9 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-bool": "^0.1.0",
-    "@stdlib/array-complex128": "^0.3.0",
-    "@stdlib/array-complex64": "^0.3.0",
+    "@stdlib/array-bool": "^0.1.1",
+    "@stdlib/array-complex128": "^0.3.1",
+    "@stdlib/array-complex64": "^0.3.1",
     "@stdlib/array-float32": "^0.2.2",
     "@stdlib/array-float64": "^0.2.2",
     "@stdlib/array-int16": "^0.2.2",
@@ -69,14 +69,14 @@
     "@stdlib/array-uint32": "^0.2.2",
     "@stdlib/array-uint8": "^0.2.2",
     "@stdlib/array-uint8c": "^0.2.2",
-    "@stdlib/assert-instance-of": "^0.2.2",
+    "@stdlib/assert-instance-of": "^0.3.0",
     "@stdlib/buffer-ctor": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.3.0",
-    "@stdlib/ndarray-base-assert-is-equal-data-type": "github:stdlib-js/ndarray-base-assert-is-equal-data-type#main",
+    "@stdlib/ndarray-base-assert-is-equal-data-type": "^0.1.0",
     "@stdlib/ndarray-base-empty": "^0.3.0",
     "@stdlib/ndarray-base-zeros": "^0.3.0",
     "@stdlib/ndarray-data-buffer": "^0.2.2",
-    "@stdlib/ndarray-dtypes": "^0.3.0",
+    "@stdlib/ndarray-dtypes": "^0.4.0",
     "@stdlib/ndarray-empty": "^0.3.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",

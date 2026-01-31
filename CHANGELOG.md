@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.1">
 
-## Unreleased (2025-11-12)
+## 0.3.1 (2026-01-31)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`3f7b1ed`](https://github.com/stdlib-js/stdlib/commit/3f7b1ed405cdb77a3357d424f462e8d3b2276df5) - **docs:** fix code in TSDoc examples _(by Philipp Burckhardt)_
 -   [`73b90f9`](https://github.com/stdlib-js/stdlib/commit/73b90f98e772d959db84ae6c7e680469e3641e45) - **docs:** update examples _(by Athan Reines)_
 -   [`3041dd6`](https://github.com/stdlib-js/stdlib/commit/3041dd64033596c03a6ed59f1a3e638fd48d4540) - **test:** use accessor functions and update docs _(by Athan Reines)_
 -   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
