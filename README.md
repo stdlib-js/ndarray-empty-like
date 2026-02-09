@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@deno/mod.js';
+import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@v0.3.2-deno/mod.js';
 ```
 
 #### emptyLike( x\[, options] )
@@ -139,7 +139,7 @@ dt = String( getDType( y ) );
 import getData from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-data-buffer@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@deno/mod.js';
-import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@deno/mod.js';
+import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@v0.3.2-deno/mod.js';
 
 // Get a list of data types:
 var dt = dtypes( 'integer_and_generic' );
