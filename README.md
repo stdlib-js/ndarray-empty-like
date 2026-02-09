@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-empty-like/tags). For example,
+
+```javascript
 import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@v0.3.2-deno/mod.js';
 ```
 
@@ -139,7 +144,7 @@ dt = String( getDType( y ) );
 import getData from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-data-buffer@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@deno/mod.js';
-import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@v0.3.2-deno/mod.js';
+import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@deno/mod.js';
 
 // Get a list of data types:
 var dt = dtypes( 'integer_and_generic' );
