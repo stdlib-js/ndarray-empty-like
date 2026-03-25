@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`8d3124d`](https://github.com/stdlib-js/stdlib/commit/8d3124d525abb511f0257649bfc4e0bf6c0ce87b) - **docs:** add comment _(by Athan Reines)_
 -   [`ff1c6e2`](https://github.com/stdlib-js/stdlib/commit/ff1c6e2ff7d740b54dab525047eb5d7786854276) - **docs:** update docs and examples to accommodate dtype instances _(by Athan Reines)_
 -   [`15b0d66`](https://github.com/stdlib-js/stdlib/commit/15b0d6624fb1dcbfb63b43291354c1ef6fbbd75b) - **refactor:** remove unnecessary offset calculation _(by Athan Reines)_
 

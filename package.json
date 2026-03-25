@@ -45,6 +45,7 @@
     "@stdlib/assert-is-number": "^0.2.3",
     "@stdlib/assert-is-plain-object": "^0.2.3",
     "@stdlib/buffer-alloc-unsafe": "^0.2.3",
+    "@stdlib/ndarray-base-dtype-resolve-str": "^0.3.1",
     "@stdlib/ndarray-base-numel": "^0.2.3",
     "@stdlib/ndarray-base-shape2strides": "^0.2.3",
     "@stdlib/ndarray-ctor": "^0.3.1",
