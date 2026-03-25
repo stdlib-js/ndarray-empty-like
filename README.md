@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-empty-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@esm/index.mjs';
+var emptyLike = require( '@stdlib/ndarray-empty-like' );
 ```
 
 #### emptyLike( x\[, options] )
@@ -60,12 +78,12 @@ import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@
 Creates an uninitialized [ndarray][@stdlib/ndarray/ctor] having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
-import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
-import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
+var zeros = require( '@stdlib/ndarray-zeros' );
 
 var x = zeros( [ 2, 2 ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
 var y = emptyLike( x );
 // returns <ndarray>
@@ -82,18 +100,18 @@ The function supports the following `options`:
 -   **dtype**: output [ndarray][@stdlib/ndarray/ctor] [data type][@stdlib/ndarray/dtypes]. Overrides the input ndarray's inferred [data type][@stdlib/ndarray/dtypes].
 -   **shape**: output [ndarray][@stdlib/ndarray/ctor] shape. Overrides the input ndarray's inferred shape.
 -   **order**: specifies whether the output [ndarray][@stdlib/ndarray/ctor] should be `'row-major'` (C-style) or `'column-major'` (Fortran-style). Overrides the input ndarray's inferred order.
--   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
--   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [`ndarray`][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
+-   **mode**: specifies how to handle indices which exceed array dimensions (see [ndarray][@stdlib/ndarray/ctor]). Default: `'throw'`.
+-   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [ndarray][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
 
 To override either the `dtype`, `shape`, or `order`, specify the corresponding option. For example, to override the inferred [data type][@stdlib/ndarray/dtypes],
 
 ```javascript
-import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
-import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
+var zeros = require( '@stdlib/ndarray-zeros' );
 
 var x = zeros( [ 2, 2 ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
 var dt = String( getDType( x ) );
 // returns 'float64'
@@ -135,16 +153,11 @@ dt = String( getDType( y ) );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import getData from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-data-buffer@esm/index.mjs';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
-import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@esm/index.mjs';
-import emptyLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty-like@esm/index.mjs';
+```javascript
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var empty = require( '@stdlib/ndarray-empty' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var emptyLike = require( '@stdlib/ndarray-empty-like' );
 
 // Get a list of data types:
 var dt = dtypes( 'integer_and_generic' );
@@ -158,12 +171,8 @@ for ( i = 0; i < dt.length; i++ ) {
         'dtype': dt[ i ]
     });
     y = emptyLike( x );
-    console.log( getData( y ) );
+    console.log( ndarray2array( y ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -202,7 +211,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -265,15 +274,15 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-empty-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/esm
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray-empty/tree/esm
+[@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray-empty
 
-[@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray-zeros-like/tree/esm
+[@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray-zeros-like
 
 <!-- </related-links> -->
 
