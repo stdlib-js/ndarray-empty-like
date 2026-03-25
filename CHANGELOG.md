@@ -2,6 +2,41 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-03-25)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`ff1c6e2`](https://github.com/stdlib-js/stdlib/commit/ff1c6e2ff7d740b54dab525047eb5d7786854276) - **docs:** update docs and examples to accommodate dtype instances _(by Athan Reines)_
+-   [`15b0d66`](https://github.com/stdlib-js/stdlib/commit/15b0d6624fb1dcbfb63b43291354c1ef6fbbd75b) - **refactor:** remove unnecessary offset calculation _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.2">
 
 ## 0.3.2 (2026-02-08)
