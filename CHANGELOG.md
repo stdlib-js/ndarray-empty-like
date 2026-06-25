@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-20)
+## Unreleased (2026-06-25)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`1977f92`](https://github.com/stdlib-js/stdlib/commit/1977f92944b56c40c27b23d74570f2958adc7a39) - **docs:** update documented default value for `submode` option [(#13106)](https://github.com/stdlib-js/stdlib/pull/13106) _(by Philipp Burckhardt)_
 -   [`2384460`](https://github.com/stdlib-js/stdlib/commit/23844609387e67c18bc0db81a5abcacdce492ffc) - **docs:** propagate recent doc-note and grammar fixes to sibling packages [(#12193)](https://github.com/stdlib-js/stdlib/pull/12193) _(by Philipp Burckhardt)_
 -   [`6d6b9d4`](https://github.com/stdlib-js/stdlib/commit/6d6b9d42d8904ca49fb55e2ca464780573886aa0) - **bench:** refactor to use string interpolation in `@stdlib/ndarray` [(#11446)](https:-/github.com/stdlib-js/stdlib/pull/11446) _(by Karan Anand)_
 -   [`8d3124d`](https://github.com/stdlib-js/stdlib/commit/8d3124d525abb511f0257649bfc4e0bf6c0ce87b) - **docs:** add comment _(by Athan Reines)_
