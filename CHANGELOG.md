@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-18)
+## Unreleased (2026-09-15)
+
+<section class="features">
+
+### Features
+
+-   [`024e902`](https://github.com/stdlib-js/stdlib/commit/024e9026cf58fa31b126ae55a345bd5617d915ec) - add float16 dtype support to `ndarray/empty-like` [(#15231)](https://github.com/stdlib-js/stdlib/pull/15231)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`024e902`](https://github.com/stdlib-js/stdlib/commit/024e9026cf58fa31b126ae55a345bd5617d915ec) - **feat:** add float16 dtype support to `ndarray/empty-like` [(#15231)](https://github.com/stdlib-js/stdlib/pull/15231) _(by Samarth Kolarkar)_
 -   [`1977f92`](https://github.com/stdlib-js/stdlib/commit/1977f92944b56c40c27b23d74570f2958adc7a39) - **docs:** update documented default value for `submode` option [(#13106)](https://github.com/stdlib-js/stdlib/pull/13106) _(by Philipp Burckhardt)_
 -   [`2384460`](https://github.com/stdlib-js/stdlib/commit/23844609387e67c18bc0db81a5abcacdce492ffc) - **docs:** propagate recent doc-note and grammar fixes to sibling packages [(#12193)](https://github.com/stdlib-js/stdlib/pull/12193) _(by Philipp Burckhardt)_
 -   [`6d6b9d4`](https://github.com/stdlib-js/stdlib/commit/6d6b9d42d8904ca49fb55e2ca464780573886aa0) - **bench:** refactor to use string interpolation in `@stdlib/ndarray` [(#11446)](https:-/github.com/stdlib-js/stdlib/pull/11446) _(by Karan Anand)_
@@ -29,11 +40,12 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
 -   Philipp Burckhardt
+-   Samarth Kolarkar
 
 </section>
 
